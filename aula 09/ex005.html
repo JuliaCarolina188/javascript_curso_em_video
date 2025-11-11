@@ -14,12 +14,23 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando com o DOM</h1>
+    <h1 id="titulo">Iniciando com o DOM</h1>
     <p>Aqui o resultado<br>Aprendendo a usar o <b>DOM</b> em JavaScript</p>
     <div>Clique em mim</div>
 
     <script>
-        window.document.write('Charset da página: ' + window.document.characterSet)
+        /*
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        document.write(p1.innerHTML)
+        p1.style.color = 'blue'
+
+        var titulo = document.getElementById('titulo')
+        titulo.style.color = 'blueviolet'
+        titulo.innerText = 'Hackeando o título da página'
+        */
+
+        var titulo = window.document.querySelector('h1#titulo')
     </script>
 </body>
 </html>
