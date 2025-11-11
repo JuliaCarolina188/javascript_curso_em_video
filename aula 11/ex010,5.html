@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou não</title>
+</head>
+<body>
+    <h1>De onde você vem?</h1>
+
+    Seu pais: <input type="text" id="pais"> <input type="button" value="Enviar" onclick="nacionalidade()"><br> 
+
+    <div id="resultado"></div>
+
+    <script>
+        function nacionalidade(){
+            var pais = document.getElementById('pais').value
+            var resultado = document.getElementById('resultado')
+
+            if (pais == 'Brasil') {
+                resultado.style.background = 'green'
+                resultado.style.color = 'yellow'
+                resultado.innerHTML += 'Você é <strong>BRASILEIRO!!!</strong>'
+            }
+            else {
+                resultado.innerHTML += 'Você não é braileiro...'
+            }
+        }
+    </script>
+</body>
+</html>
